@@ -380,5 +380,5 @@ eslint在vue-cli脚手架中作为可选方案，建议开启，并在对应的�
 
 ##### <font color="1e90ff"> 5.9 组件引用法</font>
 
-  ##### <font color="1e90ff"> 5.10 事件绑定方法</font>
+##### <font color="1e90ff"> 5.10 事件绑定方法</font>
 
