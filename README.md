@@ -22,14 +22,10 @@ CSS: 层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现
 
 HTML文件必须加上 DOCTYPE 声明，并统一使用 HTML5 的文档声明。
 
-例子：[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603094841902.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603094841902.png)
 ##### <font color="1e90ff">1.3 lang属性</font>
 
 根据HTML5规范，应在html标签上加上lang属性。这会给语音工具和翻译工具帮助，告诉它们应当怎么去发音和翻译。
 
-例子：
-[![
-![](media/7c64270d9c031595bd648d297fad53cc.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095131583.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095131583.png)
 
 ##### <font color="1e90ff">1.4 字符编码</font>
 
