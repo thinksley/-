@@ -1,3 +1,5 @@
+## 前端开发规范
+
 ### 适用范围
 适用于前端，移动端开发人员。
 ##### 术语
@@ -33,24 +35,15 @@ HTML文件必须加上 DOCTYPE 声明，并统一使用 HTML5 的文档声明。
 
 让浏览器快速的确定适合网页内容的渲染方式，默认指定为'UTF-8'。
 
-例子：
-[![
-![](media/eccbd9e3d4d33bfd1c90b799cdf9f724.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095147778.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095147778.png)
 
 ##### <font color="1e90ff">1.5 IE兼容模式</font>
 
 用 \<meta\> 标签可以指定页面应该用什么版本的IE来渲染。
 
-例子：
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095229189.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095229189.png)
 
 ##### <font color="1e90ff">1.6 移动端META标准开头</font>
 
 手机端添加meta头告诉浏览器适配屏幕显示。
-
-例子：
-
-[![![](media/b919f3d9ed16913617e163a9a9974c5c.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095204342.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095204342.png)
 
 -   width – viewport的宽度
 
@@ -96,8 +89,7 @@ required readonly disabled
 ### 2. CSS/LESS/SASS部分
 ##### <font color="1e90ff">2.1 缩进</font>
 使用soft tab（4个空格）。
-例子：
- [![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095537971.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095537971.png)
+
 ##### <font color="1e90ff">2.2 分号</font>
 每个属性声明末尾都要加分号。
 ##### <font color="1e90ff">2.3 空格</font>
@@ -113,20 +105,17 @@ required readonly disabled
 •	!important '!'前；
 •	属性值中的','后；
 •	注释'/*'后和'*/'前；
-例子：
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095596451.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095596451.png)
+
  
 以下几种情况需要空行：
 写css文件的时候每个属性只占一行，不连在一行。
-例子：
-[![[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095558051.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095558051.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095584047.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095584047.png)
+
  
 ##### <font color="1e90ff">2.4 !important</font>
 禁止使用!important。!important 拥有最高的优先级，是人为的强制重置，由于其具有较高的灵活性，使用时要考虑是否会对其他的样式产生影响，该规则在ie6下有浏览器级别的bug，使用!important对于性能并没有什么负面影响，但是从可维护性角度考虑还是少用这个规则，可通过增加选择器权重来达到覆盖样式的目的。
 ##### <font color="1e90ff">2.5 注释</font>
 css/less/sass/styls 里的注释统一用'/* */'。
-例子：(注意空格)
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095636947.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095636947.png)
+
  
 ##### <font color="1e90ff">2.6 引号</font>
 •	最外层统一使用双引号；
@@ -135,16 +124,13 @@ css/less/sass/styls 里的注释统一用'/* */'。
 ##### <font color="1e90ff">2.7 颜色</font>
 •	颜色16进制用小写字母；
 •	颜色16进制尽量用简写；
-例子：
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095653289.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095653289.png)
- 
+
 ##### <font color="1e90ff">2.8 命名</font>
 •	使用小写字母，以中划线分隔；
 •	scss中的变量、函数、混合、placeholder采用驼峰式命名；
 •	id名使用驼峰；
 •	某元素需要被jquery获取的时候前面类名或id名 前面加“ J_ ” ，目的在于告诉别该元素被js用到了，利于阅读；
-例子：
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603095667886.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603095667886.png)
+
  
 ##### <font color="1e90ff">2.9 其他</font>
 •	不允许只写属性名不写属性值的情况；
@@ -271,10 +257,6 @@ css/less/sass/styls 里的注释统一用'/* */'。
 
 -   针对某个函数的说明和参数描述；
 
-例子：
-[![
-![](media/97d4096a60487b88bcdcfc92fd5a725e.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096059489.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096059489.png)
-
 ##### <font color="1e90ff"> 3.7 引号</font>
 
 统一使用单引号。
@@ -307,9 +289,6 @@ css/less/sass/styls 里的注释统一用'/* */'。
 
 -   参数之间用', '分隔，注意逗号后有一个空格。
 
-例子：
-
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096081112.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096081112.png)
 
 ##### <font color="1e90ff">3.9 数组，对象</font>
 
@@ -340,10 +319,6 @@ css/less/sass/styls 里的注释统一用'/* */'。
 不要直接使用undefined进行变量判断；
 
 请使用typeof和字符串'undefined'对变量进行判断。
-
-例子：
-[![
-![](media/39ebf55b57da18bda68e7f196a570114.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096096606.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096096606.png)
 
   ##### <font color="1e90ff">3.14 外部cdn地方三库的引用</font>
 
@@ -378,10 +353,6 @@ css/less/sass/styls 里的注释统一用'/* */'。
 
 样式文件名跟组件名保持一致，目录结构保持跟页面级目录文件夹一致，方便维护和查看。
 
-例子：
-
-[![![](media/904355482e3c86d2ae3bb93f4273dd54.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096358324.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096358324.png)
-
 ##### <font color="1e90ff"> 5.3 分号的使用法</font>
 
 除了样式每个属性后面需要添加分号外，js部分里不以分号结尾。
@@ -389,10 +360,6 @@ css/less/sass/styls 里的注释统一用'/* */'。
 ##### <font color="1e90ff"> 5.4 目录命名法</font>
 
 源代码目录放在src目录下，目录名称采用英文小写，目录名称应做到简介明了，一眼能看出该文件夹存放的内容是干什么事。
-
-例子：
-[![
-![https://qqadapt.qpic.cn/txdocpic/0/b278ba3ab962b4e3554157140bdd478e/0](media/b278ba3ab962b4e3554157140bdd478e.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096345691.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096345691.png)
 
 ##### <font color="1e90ff"> 5.5 eslint的使用法</font>
 
@@ -402,25 +369,16 @@ eslint在vue-cli脚手架中作为可选方案，建议开启，并在对应的�
 
 以大驼峰方式命名文件夹名称。
 
-例子：
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096330698.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096330698.png)
-
 
 ##### <font color="1e90ff"> 5.7 组件法</font>
 
 组件名以小驼峰命名
 
-[![![](media/003a434e3965377707e65a307378493a.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096289486.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096289486.png)
-
 ##### <font color="1e90ff"> 5.8 Vue组件的书写顺序法</font>
 
 按照 template script style 的顺序书写
-[![
-![](media/5fec527f7f96c63362f8bff3047f0dd4.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096280612.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096280612.png)
 
 ##### <font color="1e90ff"> 5.9 组件引用法</font>
 
-[![![](media/28380c574c383d9c69bbf52f61cc3db4.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096265801.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096265801.png)
-
   ##### <font color="1e90ff"> 5.10 事件绑定方法</font>
-[![](http://wiki.paohe.cn/uploads/images/gallery/2020-10/scaled-1680-/image-1603096255367.png)](http://wiki.paohe.cn/uploads/images/gallery/2020-10/image-1603096255367.png)
+
